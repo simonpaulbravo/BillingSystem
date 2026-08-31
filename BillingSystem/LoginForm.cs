@@ -6,10 +6,5 @@ namespace BillingSystem
         {
             InitializeComponent();
         }
-
-        private void lblTitle0_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
