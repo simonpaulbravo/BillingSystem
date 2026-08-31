@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            lblTitle = new Label();
+            lblTitle0 = new Label();
             lblUsername = new Label();
             txtUsername = new TextBox();
             lblPassword = new Label();
@@ -46,17 +46,17 @@
             contextMenuStrip1.Size = new Size(61, 4);
             contextMenuStrip1.Text = "Billing System - Login";
             // 
-            // lblTitle
+            // lblTitle0
             // 
-            lblTitle.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(100, 5);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(194, 31);
-            lblTitle.TabIndex = 1;
-            lblTitle.Text = "BILLING SYSTEM";
-            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            lblTitle0.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblTitle0.AutoSize = true;
+            lblTitle0.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle0.Location = new Point(100, 5);
+            lblTitle0.Name = "lblTitle0";
+            lblTitle0.Size = new Size(194, 31);
+            lblTitle0.TabIndex = 1;
+            lblTitle0.Text = "BILLING SYSTEM";
+            lblTitle0.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblUsername
             // 
@@ -120,7 +120,7 @@
             Controls.Add(lblPassword);
             Controls.Add(txtUsername);
             Controls.Add(lblUsername);
-            Controls.Add(lblTitle);
+            Controls.Add(lblTitle0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MinimizeBox = false;
             Name = "LoginForm";
@@ -134,7 +134,7 @@
         #endregion
 
         private ContextMenuStrip contextMenuStrip1;
-        private Label lblTitle;
+        private Label lblTitle0;
         private Label lblUsername;
         private TextBox txtUsername;
         private Label lblPassword;
