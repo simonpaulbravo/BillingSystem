@@ -125,7 +125,8 @@
             MinimizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Billing System - Login";
+            Text = "Billing System v1.0 - Login (J.L.P)";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
