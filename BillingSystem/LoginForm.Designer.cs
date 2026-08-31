@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            lblTitle = new Label();
+            lblTitle1 = new Label();
             lblUsername = new Label();
             txtUsername = new TextBox();
             lblPassword = new Label();
@@ -46,17 +46,17 @@
             contextMenuStrip1.Size = new Size(61, 4);
             contextMenuStrip1.Text = "Billing System - Login";
             // 
-            // lblTitle
+            // lblTitle1
             // 
-            lblTitle.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(100, 5);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(194, 31);
-            lblTitle.TabIndex = 1;
-            lblTitle.Text = "BILLING SYSTEM";
-            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            lblTitle1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            lblTitle1.AutoSize = true;
+            lblTitle1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle1.Location = new Point(100, 5);
+            lblTitle1.Name = "lblTitle1";
+            lblTitle1.Size = new Size(194, 31);
+            lblTitle1.TabIndex = 1;
+            lblTitle1.Text = "BILLING SYSTEM";
+            lblTitle1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblUsername
             // 
@@ -120,12 +120,13 @@
             Controls.Add(lblPassword);
             Controls.Add(txtUsername);
             Controls.Add(lblUsername);
-            Controls.Add(lblTitle);
+            Controls.Add(lblTitle1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MinimizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System - Login";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,7 +134,7 @@
         #endregion
 
         private ContextMenuStrip contextMenuStrip1;
-        private Label lblTitle;
+        private Label lblTitle1;
         private Label lblUsername;
         private TextBox txtUsername;
         private Label lblPassword;
