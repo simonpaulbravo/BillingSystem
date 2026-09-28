@@ -117,6 +117,7 @@
             btnAdd.TabIndex = 2;
             btnAdd.Text = "Add Customer";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnDelete
             // 
@@ -138,7 +139,7 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(204, 56);
+            btnSearch.Location = new Point(532, 53);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(94, 29);
             btnSearch.TabIndex = 6;
@@ -148,10 +149,11 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(304, 56);
+            txtSearch.Location = new Point(645, 54);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(125, 27);
             txtSearch.TabIndex = 7;
+            txtSearch.KeyPress += txtSearch_KeyPress;
             // 
             // CustomerListForm
             // 
@@ -168,6 +170,7 @@
             Name = "CustomerListForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Billing System v1.0 - Customer List (R.J.)";
+            Load += CustomerListForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();
             ResumeLayout(false);
             PerformLayout();
